@@ -3,6 +3,7 @@ import _superagent from "superagent";
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
+process.env.NODE_ENV = "production";
 const API_ROOT =
   process.env.NODE_ENV !== "production" && process.env.HERO
     ? "http://localhost:3000/api"
