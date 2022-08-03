@@ -66,3 +66,12 @@ body {
   margin-right: 10px;
   border-radius: 5px;
 }
+
+.no-item-named {
+  background: #ce1a1a00;
+  backdrop-filter: blur(10px);
+  width: 400px;
+  height: 250px;
+  text-align: center;
+  padding-top: 100px;
+}

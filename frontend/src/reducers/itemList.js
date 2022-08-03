@@ -21,6 +21,10 @@ const reducer = (state = {}, action) => {
         pager: action.pager,
         items: action.payload.items,
         itemsCount: action.payload.itemsCount,
+        searchTitle:
+          action.searchTitle && action.searchTitle.length > 2
+            ? action.searchTitle
+            : undefined,
         currentPage: 0,
       };
     case ITEM_FAVORITED:
