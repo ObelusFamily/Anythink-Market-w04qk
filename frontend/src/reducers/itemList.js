@@ -10,10 +10,19 @@ import {
   PROFILE_PAGE_UNLOADED,
   PROFILE_FAVORITES_PAGE_LOADED,
   PROFILE_FAVORITES_PAGE_UNLOADED,
+  ITEM_SEARCH_TITLE,
 } from "../constants/actionTypes";
 
 const reducer = (state = {}, action) => {
   switch (action.type) {
+    case ITEM_SEARCH_TITLE:
+      return {
+        ...state,
+        pager: action.pager,
+        items: action.payload.items,
+        itemsCount: action.payload.itemsCount,
+        currentPage: 0,
+      };
     case ITEM_FAVORITED:
     case ITEM_UNFAVORITED:
       return {
