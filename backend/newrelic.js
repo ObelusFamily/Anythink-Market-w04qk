@@ -32,6 +32,7 @@ exports.config = {
       enabled: true,
     },
   },
+  
   attributes: {
     /**
      * Prefix of attributes to exclude from all destinations. Allows * as wildcard
